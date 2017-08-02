@@ -12,24 +12,28 @@ import {
   View
 } from 'react-native';
 
-import InitComponent from './app/components/InitComponent'
+import App from './app/containers/app';
 
-export default class ReactNativeTest1 extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <InitComponent/>
-      </View>
-    );
-  }
-}
+// import InitComponent from './app/components/InitComponent'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
-});
+// export default class ReactNativeTest1 extends Component {
+//   render() {
+//     return (
+//       <View style={styles.container}>
+//         <InitComponent/>
+//       </View>
+//     );
+//   }
+// }
 
-AppRegistry.registerComponent('ReactNativeTest1', () => ReactNativeTest1);
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//   }
+// });
+
+// AppRegistry.registerComponent('ReactNativeTest1', () => ReactNativeTest1);
+
+AppRegistry.registerComponent('ReactNativeTest1', () => App);

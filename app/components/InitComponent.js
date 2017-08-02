@@ -12,7 +12,10 @@ import {
   View
 } from 'react-native';
 
+import DisplayStatusData from './DisplayStatusData';
+
 export default class InitComponent extends Component {
+  
   render() {
     let screenWidth = Dimensions.get('window').width
     var icon = require('../images/Default.png')
@@ -28,7 +31,8 @@ export default class InitComponent extends Component {
 
     return (
       <View>
-        <Image source={icon} resizeMode='center'/>
+        {/* <Image source={icon} resizeMode='center'/> */}
+        <DisplayStatusData/>
       </View>
     );
   }
